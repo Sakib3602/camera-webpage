@@ -105,6 +105,7 @@ main h2 {
   text-align: center;
 }
 .box {
+  cursor: pointer;
   width: 329px;
   height: 476px;
   padding: 15px 15px;
@@ -175,15 +176,50 @@ main h2 {
     "b7 b8 b9";
   margin-top: 60px;
 }
+.main-foot {
+  margin-top: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+.fot {
+  width: 404px;
+  height: 270px;
+}
+.fot img {
+  width: 100%;
+}
+.text h2 {
+    margin-top: 40px;
+    color: #0A0826;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-left: 0px;
+}
+.text {
+  width: 55%;
+}
+.text p {
+  margin-top: 5px;
+}
+.text button {
+  height: 30px;
+  width: 112px;
+  background-color: #f02c6d;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 400;
+  margin-top: 20px;
+}
 
 /* media quary */
 
 @media screen and (max-width: 576px) {
-  nav ul{
+  nav ul {
     flex-wrap: wrap;
-
   }
-    main {
+  main {
     padding: 30px 10px;
   }
   .main-section {
@@ -204,7 +240,7 @@ main h2 {
   header {
     padding: 30px 10px;
   }
-  
+
   .header-main {
     flex-direction: column-reverse;
     padding: 0px 0px;
@@ -242,17 +278,16 @@ main h2 {
 
 /* 576-786 */
 @media screen and (min-width: 577px) and (max-width: 786px) {
-    main {
-        padding: 50px 0px;
-    }
-    .main-section {
+  main {
+    padding: 50px 0px;
+  }
+  .main-section {
     grid-template-areas:
       "b1 b2"
       "b3 b4"
       "b5 b6"
       "b7 b8"
-      "b9 b9"
-      ;
+      "b9 b9";
     margin-top: 60px;
   }
 
@@ -277,23 +312,20 @@ main h2 {
 }
 /* 788-992 */
 @media screen and (min-width: 787px) and (max-width: 992px) {
-  
-    main {
-        padding: 50px 50px;
-    }
-    .main-section {
+  main {
+    padding: 50px 50px;
+  }
+  .main-section {
     grid-template-areas:
       "b1 b2"
       "b3 b4"
       "b5 b6"
       "b7 b8"
-      "b9 b9"
-      ;
+      "b9 b9";
     margin-top: 60px;
   }
-  
-  
-    .header-main {
+
+  .header-main {
     flex-direction: column-reverse;
     padding: 0px 0px;
     margin-top: 20px;
@@ -315,11 +347,10 @@ main h2 {
 
 /* 993-1200 */
 @media screen and (min-width: 993px) and (max-width: 1200px) {
-  
-    main{
-        padding: 50px 40px;
-    }
-    .header-main {
+  main {
+    padding: 50px 40px;
+  }
+  .header-main {
     flex-direction: column-reverse;
     padding: 0px 0px;
     margin-top: 20px;
